@@ -1,0 +1,105 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block link %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+{% endblock link %}
+{% block title %}Projects{% endblock title %}
+{% block projActive %}active{% endblock projActive %}
+{% block body %}
+
+<!-- projects section -->
+<section class="projects" id="projects">
+  <div class="max-width">
+    <h2 class="title text-center">My projects</h2>
+    <div class="carousel owl-carousel">
+      <div class="mycard">
+        <div class="box">
+          <img src="{% static 'img/memo_game.png' %}" alt="">
+          <div class="text">Memory Game</div>
+          <p>Memory game is built with Javascript, HTML, CSS. The games has time limit and a score.</p>
+          <a href="/projects/memory_game" class="btn btn-primary">Click to Play</a>
+        </div>
+      </div>
+      <div class="mycard">
+        <div class="box">
+          <img src="{% static 'img/slider4.jpg' %}" alt="">
+          <div class="text">What is that pokemon?</div>
+          <p>"what is that pokemon" is an api app where you can get information for a specific pokemon.</p>
+          <a href="/projects/pokemon_api_game" class="btn btn-primary">Click to Play</a>
+        </div>
+      </div>
+      <div class="mycard">
+        <div class="box">
+          <img src="{% static 'img/slider1.jpg' %}" alt="">
+          <div class="text">Weather App</div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <a href="/projects/upcomingProject" class="btn btn-primary">Click to Play</a>
+        </div>
+      </div>
+      <div class="mycard">
+        <div class="box">
+          <img src="{% static 'img/slider13.jpg' %}" alt="">
+          <div class="text">Someone name</div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <a href="/projects/upcomingProject" class="btn btn-primary">Click to Play</a>
+        </div>
+      </div>
+      <div class="mycard">
+        <div class="box">
+          <img src="{% static 'img/me.jpg' %}" alt="">
+          <div class="text">Someone name</div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <a href="/projects/memory_game" class="btn btn-primary">Click to Play</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- <div class="container-md my-3">
+    <h2 class="text-center my-3 py-3">My Projects</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/memo_game.png' %}" class="d-flex align-items-center" alt="coding images">
+          <div class="card-body">
+            <h5 class="card-title">Meomory Game</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="/projects/memory_game" class="btn btn-primary">Click to Play</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://source.unsplash.com/500x250/?code,java,apple" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Developer</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Click for Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://source.unsplash.com/500x250/?code,python,apple" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Entertainer</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Click for Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  {% endblock body %}
+
+ 

@@ -1,0 +1,22 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block link %}
+<script src="{% static 'js/service.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+{% endblock link %}
+{% block title %}Home{% endblock title %}
+{% block homeActive %}active{% endblock homeActive %}
+{% block body %}
+  <!-- home section start  -->
+  <section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Hello, my name is </div>
+            <div class="text-2">Thao Truong </div>
+            <div class="text-3">And I'm a <span class="typing"></span> </div>
+            <a href="/contact">Hire me</a>
+        </div>
+    </div>
+</section>
+{% endblock body %}
+

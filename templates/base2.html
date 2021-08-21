@@ -1,0 +1,52 @@
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0d0f38f509.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/service.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/homePageStyle.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  {% block link %} {% endblock link %}
+  <title>{% block title %} {% endblock title %}</title>
+</head>
+
+<body>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="myNavbar">
+    <div class="max-width">
+      <div class="logo"><a href="/about"><i class="fab fa-connectdevelop fa-lg"></i> Portfo<span>lio.</span></a></div>
+      <ul class="menu">
+        <li><a href="/" class="menu-btn {% block homeActive %}{% endblock homeActive %}">Home</a></li>
+        <li><a href="/about" class="menu-btn {% block aboutActive %}{% endblock aboutActive %}">About</a></li>
+        <li><a href="/resume" class="menu-btn {% block resumeActive %}{% endblock resumeActive %}">Resume</a></li>
+        <li><a href="/projects" class="menu-btn {% block projActive %}{% endblock projActive %}">Projects</a></li>
+        <li><a href="/contact" class="menu-btn {% block contactActive %}{% endblock contactActive %}">Contact</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  {% block body %}
+  {% endblock body %}
+
+<!-- Footer -->
+  <footer class="py-1">
+    <p class="pt-3 text-center my-0"> &copy Copyright 2021 <a href=""><strong><span>Evangelista</span></a></strong>. All
+      Rights Reserved</p>
+    <p class="design_signature text-center"> Designed by Thao Truong</p>
+  </footer>
+  <!-- End  Footer -->
+</body>
+
+</html>

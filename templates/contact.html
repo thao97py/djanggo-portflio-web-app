@@ -1,0 +1,106 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block title %}Contact{% endblock title %}\
+{% block contactActive %}active{% endblock contactActive %}
+{% block body %}
+<!-- contact section -->
+<section class="contact" id="contact">
+  <div class="max-width">
+    <h2 class="title text-center">Contact me</h2>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43175.11207235993!2d-122.33072603143252!3d47.44227409229858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905b6cc75964d3%3A0x7822b21dad52b646!2sSeaTac%2C%20WA!5e0!3m2!1sen!2sus!4v1629482510558!5m2!1sen!2sus"
+        allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="contact-content">
+      <div class="column left">
+        <div class="text">Get in touch</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nostrum temporibus facilis aspernatur
+          labore culpa inventore obcaecati sint. Debitis, laudantium.</p>
+        <div class="icons">
+          <div class="myrow">
+            <i class="fas fa-user"> </i>
+            <div class="info">
+              <div class="head">Name</div>
+              <div class="sub-title">Thao Tuong</div>
+            </div>
+          </div>
+          <div class="myrow">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info">
+              <div class="head">Address</div>
+              <div class="sub-title">164th St, Seatac, WA</div>
+            </div>
+          </div>
+          <div class="myrow">
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+              <div class="head">Email</div>
+              <div class="sub-title">phuongthao97py@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column right">
+        <div class="text">Message me</div>
+        <form id="form" method="POST">
+          {% csrf_token %}
+          <div class="fields">
+            <div class="field name">
+              <input id="name" name="name" type="text" placeholder="Your Name" required>
+            </div>
+            <div class="field email">
+              <input id="email" name="email" type="email" placeholder="name@example.com" required>
+            </div>
+          </div>
+          <div class="field phone">
+            <input id="phone" name="phone" type="phone" placeholder="Your Phone Number" required>
+          </div>
+          <div class="field textarea">
+            <textarea id="concern" name="desc" cols="30" rows="10" placeholder="Describe your concern..."
+              required></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">Send message</button>
+          </div>
+          <div id="output">
+          </div>
+          <!-- <div class="popup-message" id="popup-message">
+            <div id="popup" class="popup">
+              <button type="button" class="popup-close" disabled aria-label="Close"><i class="fas fa-times"></i></button>
+              <span class="popuptext" id="myPopup">Thank for contacting me! <br> I will get back to you soon.</span>
+            </div>
+          </div> -->
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <div class="container-md">
+  <h2 class="text-center my-3">Contact me</h2>
+  <form action="/contact" method="POST">
+    {% csrf_token %}
+    <div class="form-group mb-3">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+    </div>
+    <div class="form-group mb-3">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+    </div>
+    <div class="form-group mb-3">
+      <label for="phone">Phone Number</label>
+      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Your Phone Number">
+    </div>
+    <div class="form-group mb-3">
+      <label for="concern">Explain your concern</label>
+      <textarea class="form-control" id="concern" name="desc" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div> -->
+
+{% endblock body %}
+{% block footerPosition %}position-relative{% endblock footerPosition %}

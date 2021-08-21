@@ -1,0 +1,170 @@
+{% extends "base2.html" %}
+{% load static %}
+
+{% block link %}
+<script src="{% static 'js/memo_game_script.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/projects_css/style_memo_game.css' %}">
+{% endblock link %}
+
+{% block title %}Memory Game{% endblock title %}
+
+{% block projActive %}active{% endblock projActive %}
+
+{% block body %}
+
+<section id="main-game" class="main-game">
+    <div class="max-width">
+        <header id="head">
+            <h2 id="h2">Memory Game</h2>
+        </header>
+        <div id="updates">
+            <div class="text-dark" id="timer">00:00</div>
+            <div class="text-dark" id="score">Score: 0</div>
+            <button class="text-dark" id="new">New Game</button>
+        </div>
+        <div id="game">
+            <div class="cards" id="card1">
+                <div class="back" id="back1"><img src="{% static 'img/memo_game_img/img1.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front1">?</div>
+            </div>
+            <div class="cards" id="card2">
+                <div class="back" id="back2"><img src="{% static 'img/memo_game_img/img2.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front2">?</div>
+            </div>
+            <div class="cards" id="card3">
+                <div class="back" id="back3"><img src="{% static 'img/memo_game_img/img3.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front3">?</div>
+            </div>
+            <div class="cards" id="card4">
+                <div class="back" id="back4"><img src="{% static 'img/memo_game_img/img6.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front4">?</div>
+            </div>
+            <div class="cards" id="card5">
+                <div class="back" id="back5"><img src="{% static 'img/memo_game_img/img8.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front5">?</div>
+            </div>
+            <div class="cards" id="card6">
+                <div class="back" id="back6"><img src="{% static 'img/memo_game_img/img9.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front6">?</div>
+            </div>
+            <div class="cards" id="card7">
+                <div class="back" id="back7"><img src="{% static 'img/memo_game_img/img7.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front7">?</div>
+            </div>
+            <div class="cards" id="card8">
+                <div class="back" id="back8"><img src="{% static 'img/memo_game_img/img1.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front8">?</div>
+            </div>
+            <div class="cards" id="card9">
+                <div class="back" id="back9"><img src="{% static 'img/memo_game_img/img4.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front9">?</div>
+            </div>
+            <div class="cards" id="card10">
+                <div class="back" id="back10"><img src="{% static 'img/memo_game_img/img5.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front10">?</div>
+            </div>
+            <div class="cards" id="card11">
+                <div class="back" id="back11"><img src="{% static 'img/memo_game_img/img4.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front11">?</div>
+            </div>
+            <div class="cards" id="card12">
+                <div class="back" id="back12"><img src="{% static 'img/memo_game_img/img5.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front12">?</div>
+            </div>
+            <div class="cards" id="card13">
+                <div class="back" id="back13"><img src="{% static 'img/memo_game_img/img6.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front13">?</div>
+            </div>
+            <div class="cards" id="card14">
+                <div class="back" id="back14"><img src="{% static 'img/memo_game_img/img10.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front14">?</div>
+            </div>
+            <div class="cards" id="card15">
+                <div class="back" id="back15"><img src="{% static 'img/memo_game_img/img9.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front15">?</div>
+            </div>
+            <div class="cards" id="card16">
+                <div class="back" id="back16"><img src="{% static 'img/memo_game_img/img2.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front16">?</div>
+            </div>
+            <div class="cards" id="card17">
+                <div class="back" id="back17"><img src="{% static 'img/memo_game_img/img10.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front17">?</div>
+            </div>
+            <div class="cards" id="card18">
+                <div class="back" id="back18"><img src="{% static 'img/memo_game_img/img3.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front18">?</div>
+            </div>
+            <div class="cards" id="card19">
+                <div class="back" id="back19"><img src="{% static 'img/memo_game_img/img7.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front19">?</div>
+            </div>
+            <div class="cards" id="card20">
+                <div class="back" id="back20"><img src="{% static 'img/memo_game_img/img8.png' %}"
+                        alt="press here for image">
+                </div>
+                <div class="front" id="front20">?</div>
+            </div>
+        </div>
+        <div id="opacity"></div>
+        <div id="result">
+            <div id="popBody">
+                <div id="imgDiv">
+                    <img src="{% static 'img/memo_game_img/thumbsUp.png' %}" alt="press here to ge image">
+                </div>
+                <h1 id="h1Res">Congratulation!</h1>
+                <p id="pRes">You've scored 5/10 in 60 seconds</p>
+            </div>
+            <div id="popOkay">
+                <div id="okayButton"><button>Great!</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container mb-3 d-flex justify-content-center">
+    <div class="backButton text-center">
+        <a href="/projects" class="py-3 px-3">Back</a>
+    </div>
+</div>
+<script src="{% static 'js/memo_game_script.js' %}"></script>
+
+{% endblock body %}
+{% block footerPosition %}position-relative{% endblock footerPosition %}
