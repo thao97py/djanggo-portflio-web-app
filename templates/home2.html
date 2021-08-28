@@ -7,16 +7,18 @@
 {% block title %}Home{% endblock title %}
 {% block homeActive %}active{% endblock homeActive %}
 {% block body %}
-  <!-- home section start  -->
-  <section class="home" id="home">
+<!-- home section start  -->
+<section class="home" id="home">
     <div class="max-width">
         <div class="home-content">
             <div class="text-1">Hello, my name is </div>
             <div class="text-2">Thao Truong </div>
             <div class="text-3">And I'm a <span class="typing"></span> </div>
-            <a href="/contact">Hire me</a>
+            <div class="but-container">
+                <a class="but-1" href="/contact">Hire me &emsp; <i class="fas fa-angle-right"></i></a>
+                <a class="but-2" href="/about">About me &emsp; <i class="fas fa-angle-right"></i></a>
+            </div>
         </div>
     </div>
 </section>
 {% endblock body %}
-

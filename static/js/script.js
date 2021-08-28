@@ -35,30 +35,19 @@ $(document).ready(function () {
 
     //owl carousel script
     $('.carousel').owlCarousel({
+        items: 1,
         margin: 20,
         loop: true,
-        autoplayTimeout: 2000,
+        autoplay:true,
+        autoplayTimeout: 7000,
+        autoplaySpeed:6000,
         autoplayHoverPasue: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: false
-            }
-        }
     });
     if (top.location.pathname == '/about' || top.location.pathname == '/') {
         // typing animation script
         var typed = new Typed(".typing",
             {
-                strings: ["Developer", "Data Engineer", "Freelancer", "Desinger"],
+                strings: ["Software Engineer", "Data Engineer", "Freelancer"],
                 typeSpeed: 100,
                 backSpeed: 60,
                 loop: true

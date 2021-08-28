@@ -21,11 +21,11 @@ html{
 --------------------------------------------------------------*/
 .myNavbar{
     /* background: crimson; */
-    padding: 5px 0 ;
+    padding: 2px 0 ;
     width: 100%;
     font-family: 'Ubuntu',sans-serif;
     margin: 0;
-    background-color: crimson;
+    background-color: rgb(247, 193, 209);
     position: fixed;
     z-index:  999;
     transition:all 0.3s ease;
@@ -33,12 +33,12 @@ html{
 .myNavbar.sticky{
   background: rgb(233, 163, 177);
   box-shadow: 0 2px 4px 0 rgba(184, 45, 63, 0.2);
-  padding: 5px 0;
+  padding: 2px 0;
 }
 
 .myNavbar .menu li a{
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-left:25px;
     transition: color 0.3s ease ;
@@ -94,7 +94,7 @@ html{
   position: fixed;
   height:42px;
   width:42px;
-  background: crimson;
+  background:crimson;
   right: 30px;
   bottom:10px;
   text-align: center;
@@ -179,7 +179,7 @@ html{
     background-image:url("me2-no-color.png");
     background-position: right; 
     background-repeat: no-repeat;  */
-    background:url("../img/hero-bg.jpg") no-repeat center; 
+    background:url("../img/main_web_img/flowers.jpg") no-repeat center; 
     height: 100vh;
     min-height: 500px;
     color: black;
@@ -189,7 +189,7 @@ html{
     margin: auto 0 auto 20%;
 }
 .home .home-content .text-1{
-    font-size:27px;
+    font-size:30px;
 }
 .home .home-content .text-2{
     font-size:75px;
@@ -204,12 +204,21 @@ html{
     color:crimson ;
     font-weight: 500;
 }
+.home .home-content .but-container{
+  display: flex;
+}
+.home .home-content .but-container .but-2{
+  margin-left: 10px;
+}
+.home .home-content .but-container i{
+  padding-left: 10px;
+}
 .home .home-content a{
     display: inline-block;
     background:crimson;
     color: #fff;
     font-size: 25px;
-    padding: 12px 36px;
+    padding: 12px 6px 12px 3px;
     margin-top: 20px;
     border-radius: 6px;
     border:2px solid crimson;
@@ -219,6 +228,9 @@ html{
 .home .home-content a:hover{
     color:crimson;
     background: none;
+}
+.home .home-content .but-2{
+  margin-left: 2%;
 }
 
 /*--------------------------------------------------------------
@@ -236,28 +248,44 @@ html{
     width:100%;
     
 }
-footer .design_signature{
-  font-family:"Lucida Calligraphy", cursive;
-}
-footer a {
-  text-decoration: none;
-  color: crimson;
-}
-footer a:hover{
-  text-decoration: underline;
-  color: crimson;
-}
+/* footer .design_signature{ */
+  /* font-family:"Lucida Calligraphy", cursive; */
+/* } */
 
-#myBtn{
+
+/* #myBtn{
     background-color: #34b7a7;
     padding: 10px 15px;
-  }
+  } */
+/*--------------------------------------------------------------
+# Header Social Links
+--------------------------------------------------------------*/
+.header-social-links {
+  padding-right: 15px;
+}
+
+.header-social-links a {
+  color: #6f6f6f;
+  padding-left: 6px;
+  display: inline-block;
+  line-height: 0px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.header-social-links a:hover {
+  color: crimson;
+  transform: scale(1.1);
+}
 /*--------------------------------------------------------------
 # All similar content styling code
 --------------------------------------------------------------*/
 section{
   padding: 110px 10%;
 } 
+.skills p, .about p{
+  font-size: 19px;
+}
 .about, .services, .skills, .teams, .contact, .projects{
   font-family:'Poppins', sans-serif;
   /* padding: 4% 10%; */
@@ -304,6 +332,17 @@ section .title::after{
 .about .title::after{
   content: "who i am";
 }
+.about ul{
+  list-style: none;
+  padding: 0;
+}
+.about ul li {
+  font-size: 20px;
+}
+.about ul li .fa-angle-right{
+  color: crimson;
+  margin-right: 4px;
+}
 .about .about-content .left img{
     height:400px;
     width:400px;
@@ -316,13 +355,13 @@ section .title::after{
   .about .about-content .right{
     width: 55%;
   }
-  .about .about-content .right .text{
+  .about .about-content .row .text{
     font-size:25px ;
     font-weight: 600;
-    margin-bottom:10px ;
+    margin-bottom:5px ;
   }
-  .about .about-content .right .text span{
-    color:#0e743b
+  .about .about-content .row .text span{
+    color:crimson;
   }
   .about .about-content .right p {
     text-align: justify;
@@ -354,28 +393,45 @@ section .title::after{
 #  Services section styling
 --------------------------------------------------------------*/
 .services, .teams, .projects{
-  background: #111;
-  color:#fff;
+  background: #f8f1f5;
+  color:#222;
 }
 .services .title::before, .teams .title::before, .projects .title::before{
-  background: #fff;
+  background: #111;
 }
 .services .title::after, .teams .title::after, .projects .title::after{
   content: "what i provide";
-  background: #111;
+  background: #f9e9f1;
 }
 .services .serv-content .mycard{
   width: calc(33% - 20px);
+  height:300px;
   text-align: center;
   border-radius: 6px;
-  padding: 20px 25px;
-  cursor: pointer;
-  background: #222;
+  background: #f19c9c;
+  overflow: hidden;
+  position: relative;
+}
+
+.services .serv-content .mycard .available{
+  color:rgb(220, 20, 20);
+  font-weight: 500;
+}
+.services .serv-content .mycard .status .text{
+  color:crimson;
+}
+.services .serv-content .status{
+  bottom: -100%;
+  position: absolute;
+  width:100%;
+  height:100%;
+  background: #fff;
+  padding: 20px 8px;
+  transition: bottom 0.5s ease;
 }
 .services .serv-content .mycard i{
   font-size: 50px;
   color: crimson;
-  transition: color 0.3s ease;
 }
 
 .services .serv-content .mycard .text{
@@ -385,15 +441,18 @@ section .title::after{
 }
 .services .serv-content .mycard .box{
   transition: all 0.3s ease;
+  margin: 20px 25px;
 }
-.services .serv-content .mycard:hover .box{
-  transform: scale(1.06);
+.services .serv-content .mycard .status .btn-secondary{
+  background-color: crimson;
 }
-.services .serv-content .mycard:hover{
-  background:crimson; 
+.services .serv-content .mycard .status .btn-secondary:hover{
+  color: crimson;
+  background: #fff;
+  border: 2px solid crimson;
 }
-.services .serv-content .mycard:hover i{
-  color:#fff
+.services .serv-content .mycard:hover .status{
+  bottom: 0%; 
 }
 
 /*--------------------------------------------------------------
@@ -402,84 +461,58 @@ section .title::after{
 .skills .title::after{
   content: "what i can do";
 }
-.skills .skills-content .column{
-  width: calc(50% - 60px);
+.skills .container .row .col{
+  margin-right: 30px;
+  border-radius: 5px;
+  background: rgb(247, 241, 246);
+  padding:0%;
 }
-.skills .skills-content .left .text{
+.skills .container .row .col:hover{
+  transform: scale(1.05);
+}
+.skills .container .row .col ul{
+  list-style-type: none;
+  padding-left: 0%;
   font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
 }
-.skills .skills-content .left p{
-  text-align: justify;
-  font-weight:300;
+.skills .container .row .col ul i{
+  margin-right: 10%;
+  margin-left: 5%;
 }
-.skills .skills-content .left a{
-  display: inline-block;
-  background:crimson ;
-  color:#fff;
-  padding: 8px 16px;
-  margin-top: 20px;
-  font-size: 18px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  border: 2px solid crimson;
-  font-size: 20px;
-  font-weight:500;
+.skills .container .row p{
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:300;
+    padding: 5px 0px;
 }
-.skills .skills-content .left a:hover{
-  color: crimson;
-  background:none;
-}
-.skills .skills-content .right .bars{
-  margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-}
-.skills .skills-content .right span{
- font-weight: 500;
- font-size: 18px;
-}
-.skills .skills-content .right .line{
-  height: 5px;
-  width: 100%;
-  background: lightgrey;
-}
-.skills .skills-content .right .line::before{
-  content: "";
-  position:absolute;
-  height:5px;
+.skills .container .row .stack1{
   background: crimson;
+}
+.skills .container .row .one i {
+  color: crimson;
+}
+.skills .container .row .stack2{
+  background: rgb(220, 157, 20);
+}
+.skills .container .row .two i {
+  color: rgb(220, 157, 20);
+}
+.skills .container .row .stack3{
+  background: rgb(31, 151, 91);
+}
+.skills .container .row .three i {
+  color: rgb(31, 151, 91);
+}
+.skills .container .row .stack4{
+  background: rgb(121, 76, 192);
+}
+.skills .container .row .four i {
+  color: rgb(121, 76, 192);
+}
 
-  /* content: "";
-  position:absolute;
-  height:100%;
-  left:0;
-  top:0;
-  background: crimson; */
 
-}
-.skills .skills-content .right .html::before{
-  width: 300px;
-  /* width:90%; */
-}
-.skills .skills-content .right .css::before{
-  width: 200px;
-}
-.skills .skills-content .right .js::before{
-  width: 160px;
-}
-.skills .skills-content .right .sql::before{
-  width: 220px;
-}
-.skills .skills-content .right .vba::before{
-  width: 270px;
-}
 /*--------------------------------------------------------------
 # Resume page
 --------------------------------------------------------------*/
@@ -579,17 +612,17 @@ section .title::after{
 # Team section
 --------------------------------------------------------------*/
 .teams .title::after{
-  content: "who with me";
+  content: "endorsement";
 }
 .teams .carousel .mycard{
-  background: #222;
   border-radius: 6px;
   padding: 35px 35px;
   text-align: center;
   transition: all 0.3s ease;
+ 
 }
 .teams .carousel .mycard:hover{
-  background: crimson;
+  background: rgb(241, 141, 161);
 }
 .teams .carousel .mycard .box{
   display: flex;
@@ -599,22 +632,29 @@ section .title::after{
   transition: all 0.3s ease;
 }
 .teams .carousel .mycard:hover .box{
-  transform: scale(1.2);
+  transform: scale(1.02);
 }
 .teams .carousel .mycard .text{
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+.teams .carousel .mycard h4{
+  font-size: 14px;
+  color: #999;
+}
 .teams .carousel .mycard img{
   height:150px ;
   width: 150px;
   object-fit:cover;
-  border-radius: 5%;
-  border:5px solid crimson;
+  border-radius: 10px;
+  
 }
 .teams .carousel .mycard:hover img{
   border-color: #fff;
+}
+.teams .carousel .mycard:hover h4{
+  color: #fff;
 }
 .owl-dots{
   text-align: center;
@@ -643,19 +683,19 @@ section .title::after{
 --------------------------------------------------------------*/
 .projects{
   height: 100vh;
+  background: #fff;
 }
 .projects .title::after{
   content: "what i built";
 }
 .projects .carousel .mycard{
-  background: rgb(85, 79, 79);
   border-radius: 6px;
   padding: 35px 5px;
   text-align: center;
   transition: all 0.3s ease;
 }
 .projects .carousel .mycard:hover{
-  background: crimson;
+  background: rgb(238, 127, 149);
 }
 .projects .carousel .mycard .box{
   display: flex;
@@ -816,27 +856,56 @@ section .title::after{
     padding-left: 5%;
     padding-right: 5%;
   }
+  .services .serv-content .mycard .box p{
+    font-size: 14px;
+  }
+  .skills p, .about p{
+    font-size: 15px;
+  }
+  .about ul li {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .resume .container a{
+    padding: 5px 15px;
+    font-size: 15px;
+  }
 }
-
+@media(max-width:1060px){
+  .skills .row .col{
+    flex: 1 0 35%;
+    margin-top: 20px ;
+  }
+}
 @media(max-width:1030px){
   .about .about-content .right p{
     font-size:15px ;
   }
   .about{
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 4%;
+    padding-right: 4%;
   }
   .skills{
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   .skills .skills-content .column{
     width: calc(50% - 30px);
   }
 }
-@media(max-width:980px){
+@media(max-width:990px){
   .services .max-width{
     padding:0;
+  }
+  .about .row .img-fluid{
+    max-width: 70%;
+    height:auto;
+  }
+  .about .row .col-lg-4{
+   text-align: center;
+  }
+  section .title{
+    margin-bottom: 30px;
   }
 }
 @media(max-width:900px){
@@ -885,7 +954,7 @@ section .title::after{
   }
   .home .home-content a{
     font-size: 23px;
-    padding: 10px 30px;
+    padding: 10px 2px;
   }
   .about .about-content .column{
     width:100%;
@@ -928,8 +997,8 @@ section .title::after{
       width: 100%;
     }
     .teams {
-      padding-left: 0%;
-      padding-right: 0%;
+      padding-left: 2%;
+      padding-right: 2%;
     } 
     .contact .contact-content .column{
       width:100%;
@@ -941,13 +1010,16 @@ section .title::after{
      width:100%;
      margin-bottom: 35px;
    }
+   .skills .row .col{
+    margin-top: 15px ;
+  }
  }
 @media(max-width:650px){
   .max-width{
         padding: 0 23px;
     }
     .home .home-content .text-2{
-        font-size:60px;
+        font-size:50px;
     }
     .home .home-content .text-3{
         font-size: 32px;
@@ -955,21 +1027,54 @@ section .title::after{
     .home .home-content a{
         font-size: 20px;
     }
+    .home .home-content .but-container i{
+      padding-left: 5px;
+    }
     .services {
       padding-left: 8%;
       padding-right: 8%;
     }
     footer {
      font-size:13px;
-    }   
+    }  
+    .about p, .skills p{
+      font-size: 13px;
+    }
+    .about ul li {
+      font-size: 13px;
+  }
+    .skills .row{
+      justify-content: center;
+    }
+    .skills .container .row .col ul {
+      font-size: 13px;
+    }
  }
  @media(max-width:500px){
     .home .home-content .text-2{
-        font-size:50px;
+        font-size:45px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 23px;
     }   
+    .max-width{
+      padding: 0 10px;
+  }
+    .projects footer{
+      margin-top: 30px;
+    }
+    .about .about-content .row .text{
+      font-size:17px ;
+    }
+    section{
+      padding-top: 85px;
+    }
+    .teams .carousel .mycard .text{
+      font-size:18px;
+    }
+    .teams .carousel .mycard .box p{
+      font-size:12px ;
+    }
  }
 
 /* @media(max-width:947px){
