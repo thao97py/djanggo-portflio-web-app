@@ -906,6 +906,9 @@ section .title::after{
   .skills .skills-content .column{
     width: calc(50% - 30px);
   }
+  .services .serv-content .mycard i {
+    font-size: 40px;
+  }
 }
 @media(max-width:990px){
   .services .max-width{
@@ -920,9 +923,6 @@ section .title::after{
   }
   section .title{
     margin-bottom: 30px;
-  }
-  .services .serv-content .mycard i {
-    font-size: 40px;
   }
 }
 @media(max-width:900px){
