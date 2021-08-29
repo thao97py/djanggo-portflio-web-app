@@ -445,11 +445,21 @@ section .title::after{
 }
 .services .serv-content .mycard .status .btn-secondary{
   background-color: crimson;
+  margin-top: 50px;
+  transition: all 0.3s ease;
+  border: 2px solid crimson;
+}
+.services .serv-content .mycard .status .btn-secondary a{ 
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.3s ease;
 }
 .services .serv-content .mycard .status .btn-secondary:hover{
-  color: crimson;
   background: #fff;
   border: 2px solid crimson;
+}
+.services .serv-content .mycard .status .btn-secondary:hover a{
+  color: crimson;
 }
 .services .serv-content .mycard:hover .status{
   bottom: 0%; 
