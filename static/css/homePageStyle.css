@@ -401,7 +401,7 @@ section .title::after{
 }
 .services .title::after, .teams .title::after, .projects .title::after{
   content: "what i provide";
-  background: #f9e9f1;
+  background: #f8f1f5;
 }
 .services .serv-content .mycard{
   width: calc(33% - 20px);
