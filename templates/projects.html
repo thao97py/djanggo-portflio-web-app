@@ -13,8 +13,84 @@
 <section class="projects" id="projects">
   <div class="max-width">
     <h2 class="title text-center">My projects</h2>
+   
+
+    <div class="projectContainer d-flex justify-content-center">
+      <div class="row">
+        <div class="projectBox">
+          <div class="projectImg">
+            <img src="{% static 'img/main_web_img/react_blog_app2.png' %}" alt="Memory game images">
+          </div>
+          <div class="projectInfo">
+            <h3>React Blog App</h3>
+            <p>A fully functional web app that allows users read others' blogs as well as register their account, login, write and publish their own blogs to main page. Built with MERN Stack which including Node.js, React.js, Express.js RESTfulAPI, MongoDB, and CRUD operations. </p>
+          </div>
+          <div class="projectDemo d-flex justify-content-start">
+            <a href="/projects/memory_game" class="mx-3" > 
+              <i class="fas fa-angle-left mx-1"></i>Demo<i class="fas fa-angle-right mx-1"></i>
+            </a>
+            <a href="https://github.com/thao97py/React-Blog-App" >
+              <i class="fas fa-angle-left mx-1"></i>Code<i class="fas fa-angle-right mx-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projectBox">
+          <div class="projectImg">
+            <img src="{% static 'img/main_web_img/memo_game.png' %}" alt="Memory game images">
+          </div>
+          <div class="projectInfo">
+            <h3>Memory Game</h3>
+            <p> A memory game that requires players to match similar picture in certain amount of time and displays score
+            for when the game is over. Classic 2D game built with Javascript, HTML, CSS and jQuery.</p>
+          </div>
+          <div class="projectDemo d-flex justify-content-start">
+            <a href="/projects/memory_game" class="mx-3" > 
+              <i class="fas fa-angle-left mx-1"></i>Demo<i class="fas fa-angle-right mx-1"></i>
+            </a>
+            <a href="https://github.com/thao97py/memory_game" >
+              <i class="fas fa-angle-left mx-1"></i>Code<i class="fas fa-angle-right mx-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projectBox">
+          <div class="projectImg">
+            <img src="{% static 'img/main_web_img/pokemon_game.png' %}" alt="Memory game images">
+          </div>
+          <div class="projectInfo">
+            <h3>What is the Pokemom?</h3>
+            <p>If you are a fan of Pokemon, this is the app where you can get interesting information for your favorite pokemon. Built with Pokemon API, HTML, and CSS.</p>
+          </div>
+          <div class="projectDemo d-flex justify-content-start">
+            <a href="/projects/pokemon_api_game" class="mx-3" > 
+              <i class="fas fa-angle-left mx-1"></i>Demo<i class="fas fa-angle-right mx-1"></i>
+            </a>
+            <a href="https://github.com/thao97py/Pokemon_APIs_demo" >
+              <i class="fas fa-angle-left mx-1"></i>Code<i class="fas fa-angle-right mx-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projectBox">
+          <div class="projectImg">
+            <img src="{% static 'img/main_web_img/portfolio.png' %}" alt="Memory game images">
+          </div>
+          <div class="projectInfo">
+            <h3>Portfolio Web App</h3>
+            <p>A complete web app to show my tech and design skills as well as my contact info. Built with Django, SQLLite, HTML, CSS, Boostrap, JavaScript, and jQuery. Web app is hosted on Heroku.</p>
+          </div>
+          <div class="projectDemo d-flex justify-content-start">
+            <a href="/" class="mx-3" > 
+              <i class="fas fa-angle-left mx-1"></i>Demo<i class="fas fa-angle-right mx-1"></i>
+            </a>
+            <a href="https://github.com/thao97py/djanggo-portflio-web-app" >
+              <i class="fas fa-angle-left mx-1"></i>Code<i class="fas fa-angle-right mx-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="projectUpcoming text-center">Up Coming Projects</h2>
     <div class="carousel owl-carousel">
-      <div class="mycard">
+      <!-- <div class="mycard">
         <div class="box">
           <img src="{% static 'img/main_web_img/memo_game.png' %}" alt="">
           <div class="text">Memory Game</div>
@@ -29,38 +105,40 @@
           <p>"what is that pokemon" is an api app where you can get information for a specific pokemon.</p>
           <a href="/projects/pokemon_api_game" class="btn btn-primary">Click to Play</a>
         </div>
-      </div>
+      </div> -->
       <div class="mycard">
         <div class="box">
-          <img src="{% static 'img/main_web_img/slider1.jpg' %}" alt="">
+          <img src="{% static 'img/main_web_img/weather_app.jpg' %}" alt="">
           <div class="text">Weather App</div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <p>A web app that displays local weather information.</p>
           <a href="/projects/upcomingProject" class="btn btn-primary">Click to Play</a>
         </div>
       </div>
-      <div class="mycard">
+      <!-- <div class="mycard">
         <div class="box">
           <img src="{% static 'img/main_web_img/slider13.jpg' %}" alt="">
           <div class="text">Blog App</div>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           <a href="/projects/upcomingProject" class="btn btn-primary">Click to Play</a>
         </div>
-      </div>
+      </div> -->
       <div class="mycard">
         <div class="box">
-          <img src="{% static 'img/main_web_img/slider8.jpg' %}" alt="">
+          <img src="{% static 'img/main_web_img/mobile_app.jpg' %}" alt="">
           <div class="text">Mobile App</div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <p>An app that checks your health day by day and suggests you proper meals that you should consume in order to remain healthy.</p>
           <a href="/projects/memory_game" class="btn btn-primary">Click to Play</a>
         </div>
       </div>
     </div>
+
   </div>
+
 </section>
 
 
 
-  <!-- <div class="container-md my-3">
+<!-- <div class="container-md my-3">
     <h2 class="text-center my-3 py-3">My Projects</h2>
     <div class="row">
       <div class="col-md-4">
@@ -100,6 +178,4 @@
       </div>
     </div>
   </div> -->
-  {% endblock body %}
-
- 
+{% endblock body %}
