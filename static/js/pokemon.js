@@ -13,7 +13,6 @@ $(document).ready(function(){
             pokedex += '<p class="text text3">Weight:</p><p>' + response.weight + '</p>';
             pokedex += '<p class="text text4">Type:</p><ul>';
             for(var k=0; k< response.types.length;k++){
-                console.log(response.types[k]);
                 pokedex += '<li>' + response.types[k].type.name +'</li>';
             };
             pokedex += '</ul>';

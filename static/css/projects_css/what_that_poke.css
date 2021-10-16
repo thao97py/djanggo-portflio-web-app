@@ -48,7 +48,8 @@ ul {
 }
 
 .backButton {
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
     background:rgb(27, 95, 30);
     font-size: 20px;
     padding: 8px 36px;
